@@ -8,12 +8,14 @@ body {font-family: Verdana, sans-serif;}
 }
 #test{
 	background-color: red;
-	width: 170px;
-	height: 150px;
-	text-align: center;
+	width: 14%;
+	height: 180px;
+	text-align: left;
 	float: left;
 	border: solid;
+
 	border-color: black;
+
 
 
 }
@@ -64,6 +66,7 @@ body {font-family: Verdana, sans-serif;}
     padding: 10px 0;
     background: #eee;
     margin: 0;
+
 }
 
 .days li {
@@ -77,9 +80,8 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .days li .active {
-    padding: 5px;
-    background: #1abc9c;
-    color: white !important
+    color: white !important;
+    text-align: center;
 }
 
 /* Add media queries for smaller screens */
@@ -95,3 +97,52 @@ body {font-family: Verdana, sans-serif;}
 @media screen and (max-width: 290px) {
     .weekdays li, .days li {width: 12.2%;}
 }
+
+
+
+/*BUTTON*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.event {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.event:hover {
+    background-color: #555555;
+    color: white;
+}
+
+
+/*EVENT*/
+/* The Modal (background) */
+.modal {
+    position: fixed;
+       width: 50%;
+   height: 50%;
+   left: 50%;
+   top: 50%; 
+   margin-left: -25%;
+   margin-top: -10%;
+   background-color: black;
+
+
+}
+
+
+
+
