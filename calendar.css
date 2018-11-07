@@ -79,7 +79,7 @@ body {font-family: Verdana, sans-serif;}
     color: #777;
 }
 
-.days li .active {
+li .active {
     color: white !important;
     text-align: center;
 }
@@ -140,7 +140,7 @@ body {font-family: Verdana, sans-serif;}
    margin-top: -10%;
    background-color: gray;
    text-align: center;
-   opacity: 1;
+   opacity: 0;
 
 
 }
