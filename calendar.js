@@ -1,16 +1,38 @@
 
 
-var days = new Array(30);
-document.getElementById("demo").innerHTML = 1; 
+
+document.getElementById("demo").innerHTML = 'JONAS';
+
+function WriteToFile(passForm) {
+ 
+    set fso = CreateObject("Scripting.FileSystemObject"); 
+    set s   = fso.CreateTextFile("/Users/School/Desktop/filename.txt", True);
+ 
+    var firstName = document.getElementById('FirstName');
+    var lastName  = document.getElementById('lastName');
+ 
+    s.writeline("First Name :" + FirstName);
+    s.writeline("Last Name :" + lastName);
+ 
+    s.writeline("-----------------------------");
+    s.Close();
+ }
 
 
-var header = document.getElementById("test");
-var btns = header.getElementsByClassName("days");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+var selector, elems, makeActive;
+
+selector = '.days li';
+
+elems = document.querySelectorAll(selector);
+
+makeActive = function () {
+    for (var i = 0; i < elems.length; i++)
+        elems[i].classList.remove('active');
+    
+    this.classList.add('active');
+};
+
+for (var i = 0; i < elems.length; i++)
+    elems[i].addEventListener('mousedown', makeActive);
+
 
