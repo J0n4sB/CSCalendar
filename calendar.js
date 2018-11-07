@@ -4,3 +4,13 @@ var days = new Array(30);
 document.getElementById("demo").innerHTML = 1; 
 
 
+var header = document.getElementById("test");
+var btns = header.getElementsByClassName("days");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
