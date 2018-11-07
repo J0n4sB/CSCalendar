@@ -63,7 +63,8 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .days {
-    padding: 10px 0;
+    padding-left: 30px;
+    padding-right: 0px;
     background: #eee;
     margin: 0;
 
