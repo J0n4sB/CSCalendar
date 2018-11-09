@@ -4,17 +4,17 @@ ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
 #wrapper{
-	background-color: blue;
+    background-color: blue;
 }
 #test{
-	background-color: red;
-	width: 14%;
-	height: 180px;
-	text-align: left;
-	float: left;
-	border: solid;
+    background-color: red;
+    width: 14%;
+    height: 180px;
+    text-align: left;
+    float: left;
+    border: solid;
 
-	border-color: black;
+    border-color: black;
 
 
 
@@ -141,7 +141,8 @@ li .active {
    margin-top: -10%;
    background-color: gray;
    text-align: center;
-   opacity: 0;
+   opacity: 0;/*set this to 1 to make it visible*/
+   z-index: -1;/*set this to 0 to make it un-clickable*/
 
 
 }
