@@ -2,8 +2,7 @@
 
 
 
-
-    var selector, elems, makeActive;
+var selector, elems, makeActive;
 
 selector = '.days li';
 
@@ -21,7 +20,7 @@ for (var i = 0; i < elems.length; i++)
 
 
 
-document.getElementById("demo").innerHTML = 'JONAS';
+document.getElementById("demo").innerHTML = 'JavaScript = Working';
 
 
 
