@@ -11,9 +11,9 @@ var utc = new Date().toJSON().slice(8,10).replace(/-/g,'/');
 function dateCheck(){
 
     var i;
-    for (i = 0; i <30; i++){
-        if(document.getElementById('P' + i).innerHTML == utc){
-            document.getElementById("P" +i).style.color = 'white';
+    for (i = 1; i <31; i++){
+        if(document.getElementById('day' +i).innerHTML == utc){
+            document.getElementById("day"+i).style.color = 'white';
         }
     }
 
@@ -45,19 +45,22 @@ function eventVisible(){
 
 function createDiv(){
 
-var i;
-for(i = 0; i <30; i++){
+    var i;
+    for(i = 1; i <31; i++){
 
 
-var div = document.createElement("div");
-div.id = i;
-div.style.backgroundColor= "red";
-div.style.width= "14%";
-div.style.height= "180px";
-div.style.textAlign= "left";
-div.style.float= "left";
-div.style.border= "solid";
-div.style.borderColor= "black";
+        var div = document.createElement("div");
+        div.id = i;
+        div.style.backgroundColor= "red";
+        div.style.width= "14%";
+        div.style.height= "180px";
+        div.style.textAlign= "left";
+        div.style.float= "left";
+        div.style.border= "solid";
+        div.style.borderColor= "black";
+//This creates the div box
+
+
 
 
 
@@ -66,12 +69,16 @@ div.style.borderColor= "black";
 
 document.getElementById("main").appendChild(div);
 
-    var para = document.createElement("P");
-    para.id = 'P'+i;
-    var t = document.createTextNode(i);
-    para.appendChild(t);
-    document.getElementById(i).appendChild(para);
 
+
+div.innerHTML = '<table style="width:100%">'+
+'<tr><td class="day" id="day'+ i + '">' + i +'</td><th  class="WC" id="WID'+ i + '">WEATHER</th></tr><tr><td colspan="2">Birthday</td> </tr></table>'
+
+
+
+document.getElementById("WID1").style.color = 'green';//changes to specific element
+
+//This creates the P element (P1, P2, P3 are the ID's)
 
 }
 
