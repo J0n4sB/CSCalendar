@@ -15,11 +15,7 @@ body {font-family: Verdana, sans-serif;}
     text-align: left;
     float: left;
     border: solid;
-
     border-color: black;
-
-
-
 }
 
 .month {
@@ -155,6 +151,23 @@ p {
     font-size: 30px;
     position: relative;
     top: -30px;
+}
+
+
+.day{
+    font-size: 30px;
+
+}
+
+.WC{
+
+    font-size: 15px;
+    text-align: right;
+
+}
+
+#WID{
+
 }
 
 
