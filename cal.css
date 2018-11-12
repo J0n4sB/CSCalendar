@@ -5,6 +5,8 @@ body {font-family: Verdana, sans-serif;}
 
 #wrapper{
     background-color: blue;
+        padding-left: 30px;
+    padding-right: 0px;
 }
 #test{
     background-color: red;
@@ -62,7 +64,7 @@ body {font-family: Verdana, sans-serif;}
     text-align: center;
 }
 
-.days {
+#days {
     padding-left: 30px;
     padding-right: 0px;
     background: #eee;
@@ -70,7 +72,7 @@ body {font-family: Verdana, sans-serif;}
 
 }
 
-.days li {
+#days li {
     list-style-type: none;
     display: inline-block;
     width: 13.6%;
@@ -147,6 +149,13 @@ li .active {
 
 }
 
+
+p {
+    color: black;
+    font-size: 30px;
+    position: relative;
+    top: -30px;
+}
 
 
 
