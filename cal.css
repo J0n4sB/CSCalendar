@@ -3,86 +3,59 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
+/*Wrapper surrounding the days of the month*/
 #wrapper{
-    background-color: blue;
-        padding-left: 30px;
+    padding-left: 30px;
     padding-right: 0px;
 }
-#test{
-    background-color: red;
-    width: 14%;
-    height: 180px;
-    text-align: left;
-    float: left;
-    border: solid;
-    border-color: black;
-}
-
+/*Title box showing Month | Year */
 .month {
+    background: blue;
+    text-align: center;
     padding: 70px 25px;
     width: 100%;
-    background: #1abc9c;
-    text-align: center;
 }
-
+/*Alighnment of Month | Year text */
 .month ul {
     margin: 0;
     padding: 0;
 }
-
+/*Design of Month | Year text */
 .month ul li {
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
+/*Left Arrow in Month | Year Box */
 .month .prev {
     float: left;
     padding-top: 10px;
 }
-
+/*Right Arrow in Month | Year Box */
 .month .next {
     float: right;
     padding-top: 10px;
 }
-
+/*Background for Days of the Week */
 .weekdays {
+    background-color: lightgrey;
+    padding: 10px;
     margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
 }
-
+/*Days of the week text "Mo Tu We Th Fr Sa Su" */
 .weekdays li {
+    color: black;
     display: inline-block;
+    text-align: center;
     width: 13.6%;
-    color: #666;
-    text-align: center;
+    
 }
+/*===================================================
 
-#days {
-    padding-left: 30px;
-    padding-right: 0px;
-    background: #eee;
-    margin: 0;
+Not sure what the following does or if necessary
 
-}
-
-#days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:50px;
-    color: #777;
-}
-
-li .active {
-    color: white !important;
-    text-align: center;
-}
-
+=====================================================*/
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
     .weekdays li, .days li {width: 13.1%;}
@@ -131,16 +104,16 @@ li .active {
 /* The Modal (background) */
 .modal {
     position: fixed;
-       width: 60%;
-   height: 80%;
-   left: 45%;
-   top: 30%; 
-   margin-left: -25%;
-   margin-top: -10%;
-   background-color: gray;
-   text-align: center;
-   opacity: 0;/*set this to 1 to make it visible*/
-   z-index: -1;/*set this to 0 to make it un-clickable*/
+    width: 60%;
+    height: 80%;
+    left: 45%;
+    top: 30%; 
+    margin-left: -25%;
+    margin-top: -10%;
+    background-color: gray;
+    text-align: center;
+    opacity: 0;/*set this to 1 to make it visible*/
+    z-index: -1;/*set this to 0 to make it un-clickable*/
 
 
 }
@@ -169,6 +142,5 @@ p {
 #WID{
 
 }
-
 
 
