@@ -72,36 +72,40 @@ Not sure what the following does or if necessary
 
 
 
-/*BUTTON*/
+/*Add Event Button Styling */
 .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
     color: white;
-    padding: 16px 32px;
+    background-color: Green; 
+    border: none;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    
+    padding: 16px 32px;
+    margin: 4px 2px;
+    
 }
 
+/*Add Event button colors*/
 .event {
     background-color: white;
     color: black;
     border: 2px solid #555555;
 }
-
+/*Hover Event for the Add Event Button*/
 .event:hover {
     background-color: #555555;
     color: white;
 }
 
 
-/*EVENT*/
-/* The Modal (background) */
+/*Event Popup menu*/
 .modal {
     position: fixed;
     width: 60%;
@@ -118,7 +122,7 @@ Not sure what the following does or if necessary
 
 }
 
-
+/*NOT SURE WHERE THIS IS CHANGING*/
 p {
     color: black;
     font-size: 30px;
@@ -126,12 +130,12 @@ p {
     top: -30px;
 }
 
-
+/*Day Number Modifier*/
 .day{
     font-size: 30px;
 
 }
-
+/*Day Weather Modifier*/
 .WC{
 
     font-size: 15px;
