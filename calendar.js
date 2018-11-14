@@ -46,11 +46,22 @@ function eventVisible(){
 function createDiv(){
 
     var i;
-    for(i = 1; i <31; i++){
+    var j;
+    for(i = 1; i <32; i++){
+
+        if(i <10){
+            j = '0'+i;
+        }
+        else{
+            j = i;
+        }
 
 
         var div = document.createElement("div");
         div.id = i;
+
+
+
         div.style.backgroundColor= "red";
         div.style.width= "14%";
         div.style.height= "180px";
@@ -71,8 +82,8 @@ document.getElementById("main").appendChild(div);
 
 
 
-div.innerHTML = '<table style="width:100%">'+
-'<tr><td class="day" id="day'+ i + '">' + i +'</td><th  class="WC" id="WID'+ i + '">WEATHER</th></tr><tr><td colspan="2">Birthday</td> </tr></table>'
+div.innerHTML = '<table style="width:70%">'+
+'<tr><td class="day" id="day'+ i + '">' + j +'</td></tr><tr><td  class="WC" id="WID'+ i + '">partly cloudy</td></tr><tr><td id="event">Birthday</td> </tr></table>'
 
 
 
