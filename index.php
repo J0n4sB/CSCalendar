@@ -27,6 +27,7 @@
 	</div>
 	<button class="button event" id="eventButton" onclick="eventVisible();">Add Event</button>
 
+<!-- Days of the Week list -->
 	<ul class="weekdays">
 		<li>Mo</li>
 		<li>Tu</li>
@@ -42,8 +43,7 @@
 
 
 
-
-
+<!-- The Add event pop up window. -->
 	<div id="myModal" class="modal"><h1>Event</h1>
 		<form onSubmit="WriteToFile(this)">
 			<label>Event Title:</label><br>
