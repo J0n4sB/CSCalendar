@@ -1,3 +1,6 @@
+
+
+
 <?php session_start(); ?>
 <!DOCTYPE php>
 <html>
@@ -6,7 +9,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="cal.css">
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/91/three.js"></script>
 
 </head>
 <body onload=" createDiv(); dateCheck();">
@@ -25,7 +28,7 @@
 			</li>
 		</ul>
 	</div>
-	<button class="button event" id="eventButton" onclick="eventVisible();">Add Event</button>
+	<button class="button events" id="eventButton" onclick="eventVisible();">Add Event</button>
 
 <!-- Days of the Week list -->
 	<ul class="weekdays">
@@ -84,6 +87,8 @@ for (var i = 0; i < elems.length; i++)
 </script>
 
 -->
+
+
 <script type="text/javascript" src="calendar.js"></script>
 </body>
 </html>
