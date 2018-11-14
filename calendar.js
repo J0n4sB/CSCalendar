@@ -48,6 +48,7 @@ function createDiv(){
     var i;
     var j;
     for(i = 1; i <32; i++){
+        
 
         if(i <10){
             j = '0'+i;
@@ -82,21 +83,28 @@ document.getElementById("main").appendChild(div);
 
 
 
-div.innerHTML = '<table style="width:70%">'+
-'<tr><td class="day" id="day'+ i + '">' + j +'</td></tr><tr><td  class="WC" id="WID'+ i + '">partly cloudy</td></tr><tr><td id="event">Birthday</td> </tr></table>'
+div.innerHTML = '<table style="width:100%">'+
+'<tr><td class="day" id="day'+ i + '">' + j +'</td></tr><tr><td class="WC" id="WID'+ i + '">partly cloudy</td></tr><tr><td class="event" id="event'+ i + '">Birthday</td> </tr></table>'
 
 
 
-document.getElementById("WID1").style.color = 'green';//changes to specific element
+
 
 //This creates the P element (P1, P2, P3 are the ID's)
 
 }
 
-
+document.getElementById("WID1").style.color = 'green';//changes to specific element
+document.getElementById("event1").innerHTML = '1st day EVENT';
+document.getElementById("event2").innerHTML = '2nd day EVENT';
 
 
 }
+
+
+
+
+
 
 
 
