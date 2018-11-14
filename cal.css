@@ -132,18 +132,27 @@ p {
 
 /*Day Number Modifier*/
 .day{
-    font-size: 30px;
+    font-size: 3vw;
+    margin: auto;
 
 }
 /*Day Weather Modifier*/
 .WC{
 
-    font-size: 15px;
-    text-align: right;
+    font-size: 1.25vw;
+    text-align: left;
+    margin: auto;
+    padding-right: 5px;
 
 }
 
 #WID{
+
+}
+
+#event{
+    font-size: 1.25vw;
+    padding-right: 3px;
 
 }
 
